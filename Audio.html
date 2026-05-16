@@ -1,0 +1,77 @@
+<!DOCTYPE html>         <!--This implies that this is a HTML5 document type-->
+
+<html>
+
+    <head>
+        <title>
+            PlayingAudioFiles
+        </title>
+    </head>
+
+    <body>
+        <center>
+            <p>
+                In this lesson, we'll learn how to add Audio files into a webpage as well as their necessary attributes. 
+            </p>
+            <hr>
+        </center>
+
+        <!--
+            Audio are added by using audio tags. In this first example, the Src attribute alone does not cause the audio to be displayed on the webpage. In fact, its invisible. Jusr like images, audio files can be loaded from the project folder or from their own special folder as has been done here. 
+            Source of Free Audio: Youtube Studio (Audio) Library
+        -->
+        <p> Example 001: Care is Heavy by Jeremy Korpas - Outcome: Missing from webpage </p>
+        <audio src="/ProjectAudios/Care Is Heavy - Jeremy Korpas, Rick Barry.mp3">
+
+        </audio>
+        
+        <!--
+            The src attribute coupled by the controls attribute makes the audio visible on the webpage
+        -->
+        <p> Example 002: Care is Heavy by Jeremy Korpas - Outcome: Visible on webpage  </p>
+        <audio src="/ProjectAudios/Care Is Heavy - Jeremy Korpas, Rick Barry.mp3" controls>
+
+        </audio>
+
+        <!--
+            In this example, the src attribute is added on the SOURCE element instead of the audio element. The controls element is however only available to the audio element. With the control element, you can play, mute, download using the 3 ellipses, forward or rewind etc
+        -->
+        <p> Example 003: Elysian Fields by Jeremy Korpas - Outcome: Visible on webpage  </p>
+        <audio controls>
+            <source src="/ProjectAudios/Elysian Fields - Jeremy Korpas, Rick Barry.mp3">
+        </audio>
+
+        <!--
+            The audio element also allows autoplay - ie an audio file to play when the webpage loads
+        -->
+        <p> Example 004: Tonight Again by Rod Kim - Outcome: Visible on webpage  </p>
+        <audio controls autoplay>
+            <source src="/ProjectAudios/Tonight Again - Rod Kim (feat. Mostly Moss).mp3">
+        </audio>
+
+        <!--
+            Even though the audio element also allows autoplay, ie the audio file to play when the webpage loads, the best practice is to have it muted. 
+        -->
+        <p> Example 005: Tonight Again by Rod Kim - Outcome: Visible on webpage  </p>
+        <audio controls autoplay muted>
+            <source src="/ProjectAudios/Tonight Again - Rod Kim (feat. Mostly Moss).mp3">
+        </audio>
+        
+        <!--
+            The audio element also allows the audio to be looped - ie to sucessively repeat when it ends
+        -->
+        <p> Example 006: Tonight Again by Rod Kim - Outcome: Visible on webpage  </p>
+        <audio controls autoplay muted loop>
+            <source src="/ProjectAudios/Tonight Again - Rod Kim (feat. Mostly Moss).mp3">
+        </audio>
+
+        <!--
+            Just incase the web browser in use does not play certain audio types, e.g .MP3, .WAV we can include back ups as below. We however have to specify the type using the type attribute. 
+        -->
+        <p> Example 007: Tonight Again by Rod Kim - Outcome: Visible on webpage  </p>
+        <audio controls autoplay muted loop >
+            <source src="/ProjectAudios/Tonight Again - Rod Kim (feat. Mostly Moss).mp3" type="audio/mpeg">
+            <source src="/ProjectAudios/Tonight Again - Rod Kim (feat. Mostly Moss).wav" type="audio/wav">
+        </audio>
+    </body>
+</html>
