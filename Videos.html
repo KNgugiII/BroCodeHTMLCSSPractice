@@ -1,0 +1,61 @@
+<!DOCTYPE html>         <!--This implies that this is a HTML5 document type-->
+
+<html>
+
+    <head>
+        <title>
+            AddingPlayingVideos
+        </title>
+    </head>
+
+    <body>
+        <center>
+            <p>
+                The aim of this lesson is to illustrate how videos can be added to webpages and their respective attributes.
+            </p>
+            <hr>
+        </center>
+
+        <!--
+            Just like the adding AUDIO files to webpages, video files have the same attributes like CONTROL, LOOP, MUTE. Furthermore, back ups can be included just incase the web browser in use doesn't play certain video formats.
+        -->
+
+        <p> 001 - Without the CONTROLS video attribute, the video is visible but doesn't do much</p>
+        <video>
+            <source src="/ProjectVideos/PimpWalk.mp4">
+        </video>
+
+        <p> 002 - WITH THE CONTROLS video attribute, the video is visible & can be played </p>
+        <video controls>
+            <source src="/ProjectVideos/PimpWalk.mp4">
+        </video>
+
+        <p> 003 - WITH THE CONTROLS AUTOPLAY LOOP video attribute, the video is visible & just loops </p>
+        <video controls autoplay loop>
+            <source src="/ProjectVideos/PimpWalk.mp4">
+        </video>
+
+        <p> 004 - with a back up file, the browser will know which format to switch to incase the primary can't</p>
+        <video controls autoplay loop>
+            <source src="/ProjectVideos/PimpWalk.mp4" type="video/mp4">
+            <source src="/ProjectVideos/PimpWalk.webm" type="video/webm">
+        </video>
+
+        <p> 005 - the video height or width can be set individually or in concert and the video plays </p>
+        <video controls height="500px">
+            <source src="/ProjectVideos/PimpWalk.mp4" type="video/mp4">
+            <source src="/ProjectVideos/PimpWalk.webm" type="video/webm">
+        </video>
+
+        <p> 006 - Lastly, a video can be wrapped in an anchor element which redirects to another site</p>
+
+        <a href="https://boondocks.fandom.com/wiki/A_Pimp_Named_Slickback" target="_blank" title="Go To Pimp">
+            <video controls autoplay loop>
+                <source src="/ProjectVideos/PimpWalk.mp4" type="video/mp4">
+                <source src="/ProjectVideos/PimpWalk.webm" type="video/webm">
+            </video>
+        </a>
+        
+        
+    </body>
+</html>
