@@ -1,0 +1,88 @@
+<!DOCTYPE html>             <!--This implies that this is a HTML5 document type-->
+
+<html>
+
+    <head>
+        <title>
+            HTMLTables
+        </title>
+    </head>
+
+    <body>
+        <center>
+            <h2> Creating tables using HTML </h2>
+            <hr>
+        </center>
+
+        <!--
+            For instance, to create a table of Store Hours, the container is the table tag, the first row containing the days of the week will be represented by the table rows, ie tr tag. Inside the tr tags, the days of the week will be represented by table header tags,ie th tags. 
+            The 2nd row will also be inside a table row tag. The row containing the hours of operation will be defined by the table data, ie td tags
+        -->
+
+        <p>
+            Observation: My reliance on CSS has to be measured. There're things I can absolutely do by using HTML including setting 'some pizzaz' or order. For instance, I thought a border can only be applied through the CSS property border-width, yet the below proves its possible. 
+        </p>
+
+        <h2> Horizontal Store Hours </h2>
+        <table border="1" style="border-style: solid;background-color:black;">
+            <tr align="center" style="background-color: lightblue;">
+                <th width="100px"> Sunday </th>
+                <th width="100px"> Monday </th>
+                <th width="100px"> Tueday </th>
+                <th width="100px"> Wednesday </th>
+                <th width="100px"> Thursday </th>
+                <th width="100px"> Friday </th>
+                <th width="100px"> Saturday </th>
+            </tr>
+
+            <tr align="center" style="background-color:aliceblue;">
+                <td> CLOSED </td>
+                <td> 8am-5pm </td>
+                <td> 8am-5pm </td>
+                <td> 8am-5pm </td>
+                <td> 8am-5pm </td>
+                <td> 8am-5pm </td>
+                <td> 9am-2pm </td>
+            </tr>
+        </table>
+
+        <h2> Vertical Store Hours </h2>
+        <table border="1" style="background-color: black;">
+            <tr>
+                <th align="left" style="background-color: yellow;"> Day </th>
+                <td align="center" style="background-color: white"> Working Hours </td>
+            </tr>
+            <tr>
+                <th align="left" style="background-color: yellow;"> Sunday </th>
+                <td align="center" style="background-color: white"> CLOSED </td>
+            </tr>
+             <tr>
+                <th align="left" style="background-color: yellow;"> Monday </th>
+                 <td align="center" style="background-color: white"> 8am-5pm </td>
+            </tr>
+             <tr>
+                <th align="left" style="background-color: yellow;"> Tuesday </th>
+                 <td align="center" style="background-color: white"> 8am-5pm </td>
+            </tr>
+             <tr>
+                <th align="left" style="background-color: yellow;"> Wednesday </th>
+                 <td align="center" style="background-color: white"> 8am-5pm </td>
+            </tr>
+            <tr>
+                <th align="left" style="background-color: yellow;"> Thursday </th>
+                 <td align="center" style="background-color: white"> 8am-5pm </td>
+            </tr>
+            <tr>
+                <th align="left" style="background-color: yellow;"> Friday </th>
+                 <td align="center" style="background-color: white"> 8am-5pm </td>
+            </tr>
+            <tr>
+                <th align="left" style="background-color: yellow;"> Saturday </th>
+                 <td align="center" style="background-color: white"> 9am-2pm </td>
+            </tr>
+                
+        </table>
+
+
+    </body>
+</html>
