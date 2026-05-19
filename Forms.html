@@ -1,0 +1,113 @@
+<!DOCTYPE html>         <!--This implies that this is a HTML5 document type-->
+
+<html>
+
+    <head>
+        <title>
+            Forms
+        </title>
+    </head>
+
+    <body>
+        <center>
+            <h2> How to create HTML Forms </h2>
+            <hr>
+        </center>
+        
+        <form name="frmTanzania">
+            <table >
+                <tr>
+                    <th>username:</th>
+                    <td><input type="text" placeholder="SpongeBob"></td>
+                </tr>
+                <tr>
+                    <th>password:</th>
+                    <td><input type="password" ></td>
+                </tr>
+                <tr>
+                    <th>email:</th>
+                    <td><input type="text" placeholder="mail@me.com"></td>
+                </tr>
+                <tr>
+                    <th>phone &#35;:</th>
+                    <td><input type="text" placeholder="+254708774989"></td>
+                </tr>
+                <tr>
+                    <th>birthdate:</th>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <th>quantity:</th>
+                    <td><input type="text" placeholder="1"></td>
+                </tr>
+                <tr>
+                    <th>title:</th>
+                    <td>
+                        <label for="Mr">Mr.</label>
+                        <input type="radio" name="Salutation" id="Mr" value="Mr">
+                        <label for="Mr">Mrs.</label>
+                        <input type="radio" name="Salutation" id="Mrs" value="Mrs">
+                        <label for="Mr">PhD</label>
+                        <input type="radio" name="Salutation" id="PhD" value="PhD">
+                    </td>
+                </tr>
+                <tr>
+                    <th>payment:</th>
+                    <td>
+                        <select name="PaymentMethods" id="PaymentMethods">
+                            <option value="Visa">Visa</option>
+                            <option value="Mastercard">Mastercard</option>
+                            <option value="Mpesa">Mpesa</option>
+                            <option value="Cash">Cash</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>subscribe:</th>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <th>
+                        comments:
+                    </th>
+                    <td>
+                        <label for="txtBxAreaComments"></label>
+                        <textarea 
+                            name="txtBxAreaComments" 
+                            id="txtBxAreaComments" 
+                            cols="50" 
+                            rows="4">
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <input type="file" id="myfile" name="myfile">
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="1">
+                        <button> 
+                            Reset 
+                        </button>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="1">
+                        <button> 
+                            Submit 
+                        </button>
+                    </th>
+                </tr>
+                
+            </table>
+        </form>
+
+        <!--
+            Observation. It might be the stage i'm in but I do not think tables are added inside forms. After watching the tutorial once I'd attempted recreating the Teacher's Form, I realised that tables in the form were unnecessary. 
+
+            Just labes and the use of various elements accordingly was what was required. 
+        -->
+
+    </body>
+</html>
