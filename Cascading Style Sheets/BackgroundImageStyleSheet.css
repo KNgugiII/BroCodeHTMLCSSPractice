@@ -1,0 +1,9 @@
+body{
+   background-image: url(/ProjectImages/HighResNairobi\ City2448×1632.jpg); 
+    /* background-image: url(/ProjectImages/ViewofNairobiCityfromUhurupark-612x612.jpg);*/
+    background-repeat: no-repeat;   /*I do not want my background images repeating*/
+    background-position: center; /*Centers the image to the centre of the webpage*/
+    background-attachment: fixed; /*Ensures the images doesn't scroll with the rest of the webpage */
+    background-size: cover; /*Ensures the images covers the whole webpage */
+    
+}
