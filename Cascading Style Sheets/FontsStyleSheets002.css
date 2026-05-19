@@ -1,0 +1,23 @@
+/*
+The below shows how to link to inculcate DOWNLOADED Google Fonts into in our project
+*/
+
+@font-face {
+    font-family: RobotoLight ;
+    src: url(/Downloaded\ Fonts/Roboto-VariableFont_wdth,wght.ttf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(/Downloaded\ Fonts/OpenSans-VariableFont_wdth,wght.ttf);
+}
+
+#Header001{
+    font-family: RobotoLight, Verdana, Arial;
+    font-weight: 900;    
+}
+
+.cssParagraphs{
+    font-family: "OpenSans", Arial;
+    font-weight: 400;
+}

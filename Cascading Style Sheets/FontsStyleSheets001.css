@@ -1,0 +1,13 @@
+/*
+The below shows how to link to remote Google Fonts and inculcate them in our projects
+*/
+
+#Header001{
+    font-family: Roboto, Verdana, Arial;
+    font-weight: bolder;    
+}
+
+.cssParagraphs{
+    font-family: "Open Sans", Arial;
+    font-weight: 400;
+}
