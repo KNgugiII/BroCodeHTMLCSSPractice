@@ -1,0 +1,15 @@
+body{
+    border: 3px solid red;
+    display: flow-root;     /*This ensures that any floating objects outside the border of the border are always within and NOT OVERFLOWING, ie outside the boundary*/
+}
+
+
+#img001{
+    float: left;
+    margin-right: 10px;
+}
+
+#img002{
+    float: right;
+    margin-left: 10px;
+}
