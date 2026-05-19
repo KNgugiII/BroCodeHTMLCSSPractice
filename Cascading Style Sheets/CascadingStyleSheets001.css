@@ -1,0 +1,29 @@
+/*
+    To set properties using the ID property of an element, we must preceed the ID name with a Hash sign
+*/
+#p1{
+    color: green;
+}
+
+#p2{
+    color: black;
+}
+
+#p3{
+    color: blue;
+}
+
+#p4{
+    color: yellow;
+}
+
+/*
+    To set properties using the class property of an element, we must preceed the class name with a period sign
+*/
+.cssEven{
+    color: aqua;
+}
+
+.cssOdd{
+    color: purple;  
+}
