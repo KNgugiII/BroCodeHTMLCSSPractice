@@ -1,0 +1,90 @@
+<!DOCTYPE html>         <!--This implies that this is a HTML5 document type-->
+
+<html>
+
+    <head>
+        <title>
+            Forms001
+        </title>
+    </head>
+
+    <body>
+        <center>
+            <h2> HTML Forms </h2>
+            <hr>
+        </center>
+        
+        <form name="frmKenya">
+
+            <label for="lblUserName">Username:</label>
+            <input type="text" name="txtBxUserName" id="lblUserName" placeholder="Spongebob" maxlength="15" minlength="7" required>
+            <br>
+
+            <label for="lblPassword">Password:</label>
+            <input type="password" name="txtBxPassword" id="lblPassword" maxlength="12" minlength="8">
+            <br>
+
+            <label for="lblEmail">Email:</label>
+            <input type="email" name="txtBxEmail" id="lblEmail" placeholder="SSquarepants@gmail.com"maxlength="20" minlength="18">
+            <br>
+
+            <label for="lblTelNum">Phone #:</label>
+            <input type="tel" name="txtBxTelNum" id="lblTelNum">
+            <br>
+
+            <label for="lblBirthdate">Birthdate</label>
+            <input type="date" name="txtbxBirthdate" id="lblBirthdate">
+            <br>
+
+            <label for="lblQuantity">Quantity:</label>
+            <input type="number" name="txtBxQuantity" id="lblQuantity" max="10" min="0" value="1">
+            <br>
+
+            <label for="lblTitle">Title:</label>
+            
+            <label for="lblMr">Mr.</label>
+            <input type="radio" name="rdoTitle" id="lblMr">
+
+            <label for="lblMs">Ms.</label>
+            <input type="radio" name="rdoTitle" id="lblMs">
+
+            <label for="lblPhD">PhD</label>
+            <input type="radio" name="rdoTitle" id="lblPhD">
+            <br>
+
+            <label for="lblPaymentTypes">Payment:</label>
+            <select name="drpDwnPaymentTypes" id="lblPaymentTypes" required>
+                <option value="None">None</option>
+                <option value="Visa">Visa</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="Mpesa">Mpesa</option>
+                <option value="Cash">Cash</option>
+            </select>
+            <br>
+
+            <label for="lblSubscriber">Subscriber:</label>
+            <input type="checkbox" name="chckBxSubscriber" id="lblSubscriber">
+            <br>
+
+            <label for="lblComment">Comment:</label>
+            <textarea name="txtArea" id="lblComment" cols="30" rows="3"></textarea>
+            <br>
+
+            <label for="lblFile">File:</label>
+            <input type="file" name="bttnChooseFile" id="lblFile">
+            <br>
+
+            <input type="reset" value="Reset">
+            <br>
+            <input type="submit" value="Submit">
+
+            <!--
+                Observation: When creating a Form, a label element is very crucial. The For attribute of a label can be used to link the associated input element through its ID attribute. 
+
+                A HTML Form is used for user input - backend languages include php. Rely on w3schools to check out element attributes. 
+            -->
+
+        </form>
+        
+    </body>
+</html>
