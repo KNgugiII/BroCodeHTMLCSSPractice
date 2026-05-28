@@ -1,0 +1,18 @@
+h1{
+    font-family: calibri;
+    font-size: large;
+    text-shadow: 3px 3px 3px rgba(3, 27, 241, 0.336), -3px -3px 3px rgba(165, 235, 4, 0.5);
+}
+
+/*The text shadow attribute for text elements implies the HORIZONTAL DOWN & BLUR effects.*/
+
+/*Text elements rely on the text-shadow attribute while OTHER elements rely on the box shadow attribute*/
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    box-shadow: 3px 3px 3px rgba(0, 255, 55, 0.5), -3px -3px 3px rgba(165, 235, 4, 0.5);
+}
+
+/*Per the above, its very much possible to add MORE THAN 1 SHADOW EFFECT by adding a comma*/
