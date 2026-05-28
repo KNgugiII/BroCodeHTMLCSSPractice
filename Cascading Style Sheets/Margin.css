@@ -1,0 +1,34 @@
+p{
+    font-family: calibri;
+    font-size:small;
+}
+
+#div001{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin: 10px;
+}
+
+#div002{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(5, 47, 235);
+    margin-left: auto;
+}
+
+#div003{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(193, 235, 5);
+    margin-right: auto;
+}
+
+#div004{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(216, 5, 235);
+    margin: auto;
+}
+
+/*NOTE: By default, the body element usually has a margin set all around it. The margin can be set to 0*/
