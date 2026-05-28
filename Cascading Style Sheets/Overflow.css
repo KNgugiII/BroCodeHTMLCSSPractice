@@ -1,0 +1,30 @@
+p{
+    font-family: calibri;
+    font-size: medium;
+    
+}
+
+div{
+    height: 50px;
+    border: 2px solid red;
+    overflow:hidden;
+}
+
+
+/*
+overflow: scroll property sets horizontal and vertical scroll bars on the div element that will enable the user to scroll up and down, left to right of their content. 
+
+overflow: visible just leaves the content overflowing. 
+
+overflow: hidden trims of the info in the div element.
+
+other properties of the overflow attribute include the clip etc.
+
+Observation:
+The overflow property was only returning the end of the statement when its property was set to hidden. To ensure the begining part is indicated, include the below;
+direction: ltr;
+overflow: hidden;
+
+Despite following the tutorial, I still can't copy all the text within the DIV as is even if the property has been set to hidden. 
+
+*/
