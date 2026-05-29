@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+}
+
+#preDefTerm001{
+    text-align: left;
+}
+
+/*To apply Pseudo Class properties to the anchor tab, please see the below*/
+a:link{
+    color:rgb(228, 224, 18); /*For whatever reason, this doesn't cut it*/
+    text-decoration: none;
+}
+
+/*When the user hovers over the link*/
+a:hover{
+   color: blue;
+   font-size: 1.1em; /*This increases the font size. em is another way of referring to size using pxs*/
+}
+
+/*When the user has right clicked on the link*/
+a:active{
+    color: brown;
+}
+
+/*When a link has been visited*/
+a:visited{
+    color: grey;
+}
+
+/*To apply Pseudo Class properties to the list Items, please see the below*/
+/*When you hover over a list item*/
+li:hover{
+    color: yellow;
+}
+
+/*When you do NOT hover over a list item - this basically negates what the above hover script did*/
+li:not(:hover){
+    color: aqua;
+}
+
+/*Depending on what value is set in the parenthesis, the selected list item will be highlighted. This has wide applicability in Javascript where functions are utilized to highlight the hovered over item*/
+li:nth-child(3n+1):hover{
+    color: crimson;
+}
+
+/*(3n+ 1) means go 3 steps forward and apply the style. It could have conversely been 1, 2, 3 or any other number or even or odd- best used with Javascript*/
