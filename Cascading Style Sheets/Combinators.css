@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+}
+
+p{
+    font-size: 14px;
+    font-family: verdana;
+}
+
+/*To make the Div section visible*/
+.div001 {
+    border: 2px solid brown;
+}
+
+/*To highlight all of the descendants in div001, 1 2 3 A B, do as below - note the EMPTY SPACE then the element being prioritized*/
+.div001 p{
+    background-color: yellow;
+}
+
+/*To highlight all of the children in div001, 1 2 and 3, do as below - note the greater than symbol*/
+/*Because A and B are in their own Div, they are considered descendants as opposed to direct children*/
+.div001 > p{
+    background-color: aqua;
+}
+
+/*To highlight all of the general siblings in div001, 4 and 5, do as below - note the tilder than symbol*/
+.div001 ~ p{
+    background-color:burlywood;
+}
+
+/*To highlight the adjacent sibling in div001, ie 4 , do as below - note the addition than symbol*/
+.div001 + p{
+    background-color:blue;
+}
+
